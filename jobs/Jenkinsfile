@@ -1,11 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('Hello') {
+        stage('Ejecutar script Python') {
             steps {
-                script {
-                    echo 'Hola, mundo!'
-                }
+                // Reemplaza la ruta del script según sea necesario
+                sh 'python C:\\Users\\erlin\\OneDrive\\Escritorio\\Programas\\programas\\programas_test\\bot_geshin\\sesion_day_v3.py'
             }
         }
     }
